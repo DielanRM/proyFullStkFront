@@ -5,5 +5,12 @@ body{
 button{
     border: none;
     border-radius: 50px;
-    background-color: $input-color;
+    background-color: greenyellow;//$input-color
+    cursor: pointer;
+    text-align: center;
+    appearance: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }

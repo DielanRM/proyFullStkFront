@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <header>
             <nav>
-                <Link to='/'>Movies</Link>
+                <Link to='/'>Busca tu pelicula</Link>
 
                 <div className="input_style">
                     <input type="text" />
