@@ -1,0 +1,28 @@
+@import './sass/abstracts/colors.scss';
+@import './sass/base/ressets.scss';
+@import './sass/abstracts/mixins.scss';
+@import './sass/base/base.scss';
+
+h1{
+  color: $primary-color;
+}
+
+.main-content{
+  display: flex;
+  position: absolute;
+  .main-aside{
+    position: fixed;
+  }
+}
+
+input{
+  background-color: $input-color;
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  height: 1.5rem;
+}
+
+input:hover{
+  background-color: rgba(255, 255, 0, 0.226);
+}

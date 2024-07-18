@@ -1,0 +1,32 @@
+@import '../../index.scss';
+@import '../../sass/abstracts/colors';
+@import '../../sass/abstracts/mixins';
+
+header{
+    @include center;
+    background-color: $elements-color;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px $secondary-color;
+    position: fixed;
+    nav{
+        @include center;
+
+        .input_style{
+            @include inputform;
+            @include center;
+        }
+        .nav__options {
+            ul {
+                display: flex;
+                align-items: end;
+    
+                li {
+                    list-style: none;
+                    padding-left: 1rem;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
