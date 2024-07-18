@@ -1,0 +1,19 @@
+@import '../../index.scss';
+@import '../../sass/abstracts/mixins';
+
+.main-container{
+    padding-left: 20%;
+    padding-top: 15%;
+    width: 80%;
+    .form-container{
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        div{
+            .form__form-group__input{
+                padding-top: 1rem;
+            }
+        }
+    }
+}
