@@ -3,6 +3,8 @@ import Dashboard from'./pages/Dashboard'
 import Login from'./pages/login/Login'
 import Register from'./pages/register/Register'
 import NavBar from './components/navbar/NavBar'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/ReactToastify.css'
 
 function App() {
 
@@ -11,6 +13,7 @@ function App() {
       <Router>
         <div className='container'>
           <NavBar />
+          
           <Routes>
             <Route path='/' element={ <Dashboard/> } />
             <Route path='/login' element={ <Login/> } />
@@ -19,6 +22,7 @@ function App() {
 
         </div>
       </Router>
+      <ToastContainer />
     </>
   )
 }

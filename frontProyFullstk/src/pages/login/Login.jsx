@@ -1,17 +1,24 @@
 import { useState, useEffect } from "react"
 import { LiaSignInAltSolid } from "react-icons/lia";
+//import { useSelector, useDispatch } from "react-redux"
+//import { useNavigate } from "react-router-dom"
+//import { toast } from 'react-toastify'
+//import { login, reset, user } from '../../features/auth/authSlice'
 import './Login.scss'
 
 const Login = () => {
 
   const [formData, setFormData] = useState({
-    nombre: '',
     email: '',
     password: '',
-    password2: ''
   })
 
-  const { nombre, email, password, password2 } = formData
+  const { email, password } = formData
+
+  // const navigate = useNavigate()
+  // const dispatch = useDispatch()
+
+  //const {user, isLoading, isError, isSuccess, message} = useSelector((state) => state.auth)
 
   const onChange = (e) => {
     setFormData((prevState) => ({
@@ -20,8 +27,18 @@ const Login = () => {
     }))
   }
 
+  //==================================================================================================================
   const onSubmit = (e) => {
     e.preventDefault()
+    // if (password !== user.password && email !== user.email) {
+    //   toast.error('Usuario no registraado')
+    // } else {
+    //   const userData = {
+    //     email,
+    //     password
+    //   }
+    //   dispatch(login(userData))
+    // }
   }
 
   return (
@@ -58,7 +75,7 @@ const Login = () => {
               />
             </div>
 
-            <button type="submit">Registrar</button>
+            <button type="submit">Ingresar</button>
 
           </form>
 
