@@ -35,8 +35,8 @@ const Items = () => {
                         <Link to={`/item/${item.id}`} key={item.id}>
                             <div className='item'>
                                 <img src={`https://image.tmdb.org/t/p/w200${item.poster_path}`} />
-                                <h3>{item.original_title}</h3>
-                                <p>{item.overview}</p>
+                                <h3 className="titulo">{item.original_title}</h3>
+                                <p className="sinapsis">{item.overview}</p>
                             </div>
                         </Link>
                         ))}

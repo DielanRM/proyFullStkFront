@@ -7,7 +7,7 @@ header{
     background-color: $elements-color;
     width: 100%;
     padding: 20px;
-    box-shadow: 0px 0px 10px 0px $secondary-color;
+    box-shadow: 0px 0px 20px 0px $secondary-color;
     position: fixed;
     nav{
         @include center;

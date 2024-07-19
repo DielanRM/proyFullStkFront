@@ -24,7 +24,7 @@ const NavBar = () => {
                         </li>
                         <li>
                             <Link to='/register'>
-                                <FaUserAstronaut size={30}/>
+                                <FaUserAstronaut size={40}/>
                             </Link>
                         </li>
                         <li>
