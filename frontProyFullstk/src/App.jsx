@@ -5,6 +5,7 @@ import Register from'./pages/register/Register'
 import NavBar from './components/navbar/NavBar'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/ReactToastify.css'
+import Items from './pages/Items/Items'
 
 function App() {
 
@@ -13,9 +14,8 @@ function App() {
       <Router>
         <div className='container'>
           <NavBar />
-          
           <Routes>
-            <Route path='/' element={ <Dashboard/> } />
+            <Route path='/' element={ <Items /> } />
             <Route path='/login' element={ <Login/> } />
             <Route path='/register' element={ <Register/> } />
           </Routes>

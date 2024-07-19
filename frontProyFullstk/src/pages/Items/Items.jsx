@@ -24,21 +24,25 @@ const Items = () => {
         getData()
     }, [])
 
+
+
     if (loading) {
         <Spinner />
     } else {
         return (
             <section className='items-container'>
-                <div className='items'>
-                    {items.map(item => (
+                        {items.map(item => (
                         <Link to={`/item/${item.id}`} key={item.id}>
                             <div className='item'>
-                                <img src={item.image} />
-                                <h3>{item.product_name}</h3>
-                                <p>{item.price}</p>
+                                <img src={`https://image.tmdb.org/t/p/w200${item.poster_path}`} />
+                                <h3>{item.original_title}</h3>
+                                <p>{item.overview}</p>
                             </div>
                         </Link>
-                    ))}
+                        ))}
+
+                <div className='items'>
+                    <img src="https://image.tmdb.org/t/p/w200/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" alt="" /> {/*url del posterpath*/}
                 </div>
             </section>
         )
