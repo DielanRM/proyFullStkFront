@@ -1,13 +1,13 @@
 @import '../sass/abstracts/colors';
 
 .space {
-    padding-top: 220px;
+    margin-top: 220px;
+    margin-left: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100hv;
     background: $primary-bg-color;
-    
 
     .moon {
         background: bisque;
