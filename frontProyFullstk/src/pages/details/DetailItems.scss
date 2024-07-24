@@ -1,0 +1,33 @@
+@import '../../sass/abstracts/mixins';
+@import '../../sass/abstracts/colors';
+
+.container{
+    display: flex;
+    
+    .row{
+        padding-top: 10rem;
+        padding-left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        .col{
+            width: 60%;
+            .image{
+                padding-bottom: 10%;
+                border-radius: 10px;
+                height: 300px;
+                width: 300px;
+            } 
+        }
+        .info{
+            box-sizing: content-box;
+            padding: 4px;
+            width: 80%;
+            border-radius: 10px;
+            background-color: $secondary-color;
+            p{
+                padding-bottom: .5rem;
+            }
+        }
+    }    
+}

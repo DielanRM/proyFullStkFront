@@ -3,6 +3,7 @@ import Dashboard from'./pages/Dashboard'
 import Login from'./pages/login/Login'
 import Register from'./pages/register/Register'
 import NavBar from './components/navbar/NavBar'
+import DetailItems from './pages/details/DetailItems'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/ReactToastify.css'
 import Items from './pages/Items/Items'
@@ -18,6 +19,7 @@ function App() {
             <Route path='/' element={ <Items /> } />
             <Route path='/login' element={ <Login/> } />
             <Route path='/register' element={ <Register/> } />
+            <Route path='/api/peliculas/:id' element={ <DetailItems /> } />
           </Routes>
 
         </div>
