@@ -67,14 +67,15 @@ const Login = () => {
           <h3>
             <LiaSignInAltSolid size={30} />Login
           </h3>
-          <p>
+          <p className="subTitle">
             Teclea tus credenciales
           </p>
         </section>
 
         <section className="form-container">
           <form onSubmit={onSubmit}>
-            <div>
+            
+            <div className="dataArea">
               <input type="email"
                 className="form__form-group__input"
                 id="email"
@@ -91,12 +92,10 @@ const Login = () => {
                 placeholder="Teclea tu password"
                 onChange={onChange}
               />
+               <button type="submit" className="submit-Button">Ingresar</button>
             </div>
 
-            <button type="submit">Ingresar</button>
-
-          </form>
-
+          </form> 
         </section>
       </div>
     </>

@@ -7,13 +7,14 @@
     padding-top: 12%;
     width: 70%;
     .form-container{
-        @include center;
+        @include vertical;
         border-radius: 35px;
         background-color: $primary-bg-color;
         margin-bottom: 2rem;
+        padding-top: 1rem;
         box-shadow: 0px 0px 20px 0px $secondary-color;
         .subTitle{
-            margin-top: 2%;
+            margin-top: 3%;
             color: $secondary-color;
         }
         .dataArea{

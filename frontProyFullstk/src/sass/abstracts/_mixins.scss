@@ -1,17 +1,23 @@
-@mixin center{
+@mixin center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin forms{
+@mixin forms {
     margin-left: 20%;
     padding-top: 25%;
 }
 
-@mixin inputform{
+@mixin inputform {
     width: 60%;
     height: 1.5rem;
     border-radius: 10px;
     background-color: $input-color;
+}
+
+@mixin vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
