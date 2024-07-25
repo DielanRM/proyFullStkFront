@@ -15,8 +15,17 @@ h1{
   }
 }
 
+h3{
+  color: $primary-color;
+}
+
+p{
+  margin-bottom: .5rem;
+}
+
 input{
   background-color: $input-color;
+  padding-left: 1rem;
   border: none;
   border-radius: 10px;
   width: 300px;

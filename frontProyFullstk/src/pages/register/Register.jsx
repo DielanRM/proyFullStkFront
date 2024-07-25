@@ -21,7 +21,7 @@ const Register = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  const {user, isLoading, isError, isSuccess, message} = useSelector((state) => state.auth)
+  const { user, isLoading, isError, isSuccess, message } = useSelector((state) => state.auth)
 
   useEffect(() => {
     if (isError) {
@@ -69,16 +69,17 @@ const Register = () => {
 
         <section className="form-container">
           <h3>
-            <FaUserAstronaut size={30} />Registrar
+            <FaUserAstronaut size={30} color="rgb(210, 210, 71)" />Registro
           </h3>
-          <p>
+          <p className="subTitle">
             Crea tu Cuenta aqui
           </p>
         </section>
 
         <section className="form-container">
           <form onSubmit={onSubmit}>
-            <div>
+
+            <div className="dataArea">
               <input type="text"
                 className="form__form-group__input"
                 id="nombre"
@@ -111,12 +112,10 @@ const Register = () => {
                 placeholder="Confirma tu password"
                 onChange={onChange}
               />
+              <button type="submit" className="submit-Button">Registrar</button>
             </div>
 
-            <button type="submit">Registrar</button>
-
           </form>
-
         </section>
       </div>
     </>

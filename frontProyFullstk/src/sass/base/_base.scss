@@ -1,3 +1,4 @@
+
 body{
     background-color: $primary-bg-color;  
 }
@@ -5,7 +6,7 @@ body{
 button{
     border: none;
     border-radius: 50px;
-    background-color: greenyellow;//$input-color
+    background-color: $input-color;
     cursor: pointer;
     text-align: center;
     appearance: button;
