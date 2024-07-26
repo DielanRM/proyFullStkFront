@@ -21,6 +21,15 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+            .input_style-search{
+                @include inputform;
+                @include center;
+                margin-top: 2%;
+                width: 94%;
+                background-color: $input-color;
+                
+            }
         }
         div{
             .form__form-group__input{

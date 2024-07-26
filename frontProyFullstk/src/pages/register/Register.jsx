@@ -17,6 +17,7 @@ const Register = () => {
   })
 
   const { nombre, email, password, password2 } = formData
+  const [mostrarPassword, setMostrarPassword] = useState(false)
 
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -96,7 +97,8 @@ const Register = () => {
                 placeholder="Teclea tu email"
                 onChange={onChange}
               />
-              <input type="password"
+              <div className="input_style-search">
+              <input type={mostrarPassword ? 'text' : 'password'}
                 className="form__form-group__input"
                 id="password"
                 name="password"
@@ -104,6 +106,12 @@ const Register = () => {
                 placeholder="Teclea tu password"
                 onChange={onChange}
               />
+              <button type="button" onClick={() => setMostrarPassword(!mostrarPassword)}>
+                            {mostrarPassword ? '🌝' : '🌚'}
+                        </button>
+              </div>
+
+
               <input type="password"
                 className="form__form-group__input"
                 id="password2"

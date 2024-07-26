@@ -12,9 +12,12 @@ header{
     nav{
         @include center;
 
-        .input_style{
+        .input_style-search{
             @include inputform;
             @include center;
+            background-color: $input-color;
+            margin-left: 8rem;
+            margin-right: 8rem;
         }
         .nav__options {
             ul {

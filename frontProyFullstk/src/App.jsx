@@ -19,8 +19,8 @@ function App() {
           <Routes>
             <Route path='/' element={ <Items /> } />
             <Route path='/login' element={ <Login/> } />
-            
-            <Route path='/logOut' element={ <Items/> } />
+
+            <Route path='/logOut' element={ <LogOut/> } />
             <Route path='/register' element={ <Register/> } />
             <Route path='/api/peliculas/:id' element={ <DetailItems /> } />
           </Routes>

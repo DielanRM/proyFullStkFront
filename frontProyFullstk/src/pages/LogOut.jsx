@@ -1,15 +1,16 @@
 import { logout, reset } from '../features/auth/authSlice'
 import { useSelector, useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 import { toast } from 'react-toastify'
+import Items from './Items/Items'
 
 const LogOut = () => {
 
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
-    const { user, isLoading, isError, isSuccess, message } = useSelector((state) => state.auth)
+    const { isError, isSuccess, message } = useSelector((state) => state.auth)
 
     useEffect(() => {
         if (isError) {
@@ -21,11 +22,18 @@ const LogOut = () => {
         }
 
         dispatch(reset())
-    }, [user, isError, isSuccess, message, navigate, dispatch])
+    }, [isError, isSuccess, message, navigate, dispatch])
+
+
+    const handleLogout = () => {
+        dispatch(logout()).then(() => {
+            dispatch(reset())
+            navigate('/login')
+        })
+    }
 
     return (
-        <>
-        </>
+        <Items />
     )
 }
 
